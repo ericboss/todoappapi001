@@ -148,3 +148,7 @@ if 'DATABASE_URL' in os.environ:
 SWAGGER_SETTINGS = {
    'USE_SESSION_AUTH': False
 }
+
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
