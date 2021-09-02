@@ -143,3 +143,8 @@ LOGIN_URL = '/api/auth/login'
 if 'DATABASE_URL' in os.environ:
     import dj_database_url
     DATABASES = {'default': dj_database_url.config()}
+
+
+SWAGGER_SETTINGS = {
+   'USE_SESSION_AUTH': False
+}
