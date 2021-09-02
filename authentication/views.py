@@ -10,11 +10,11 @@ class AuthUserAPIView(GenericAPIView):
 
     permission_classes = (permissions.IsAuthenticated,)
     serializer_class=RegisterSerializer
+
     def get(self, request):
         user = request.user
         serializer = RegisterSerializer(user)
         return response.Response({'user': serializer.data})
-
 
 
 class RegisterAPIView(GenericAPIView):

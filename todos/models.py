@@ -1,6 +1,7 @@
+from helpers.models import TrackingModel
 from django.db import models
-from helper.models import  TrackingModel
 from authentication.models import User
+
 
 class Todo(TrackingModel):
     title = models.CharField(max_length=255)
@@ -10,5 +11,3 @@ class Todo(TrackingModel):
 
     def __str__(self):
         return self.title
-
-

@@ -4,6 +4,7 @@ from django.urls import reverse
 from rest_framework import status
 from todos.models import Todo
 
+
 class TodosAPITestCase(APITestCase):
 
     def create_todo(self):
