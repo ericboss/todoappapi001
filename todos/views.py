@@ -8,6 +8,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from todos.pagination import CustomPageNumberPagination
 
 
+
 class TodosAPIView(ListCreateAPIView):
     serializer_class = TodoSerializer
     pagination_class = CustomPageNumberPagination
